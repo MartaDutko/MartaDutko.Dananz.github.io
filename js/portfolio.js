@@ -1,3 +1,3 @@
 function portfolio(){
-    window.location.href=`/portfolioDitels.html`
+    window.location.href=`/MartaDutko.Dananz.github.io/portfolioDitels.html`
 }
