@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/contact.css">
+    <link rel="stylesheet" href="./iconFonts.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="./index.html" class="header__logo">
+                    <img src="./img/logo/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu burger-menu menu">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class="menu-btn" for="menu-toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menubox">
+                        <li><a class="menu-item " href="#" id="home">Home</a></li>
+                        <li><a class="menu-item" href="#" id="aboytUs">About Us</a></li>
+                        <li><a class="menu-item" href="#" id="services">Services</a></li>
+                        <li><a class="menu-item" href="#" id="teams">Our Teams</a></li>
+                        <li><a class="menu-item" href="#" id="portfolio">Portfolio</a></li>
+                        <li><a class="menu-item header__buttom block-btn" href="#" id="contact"
+                                onclick="contact()">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <!-- section1 -->
+            <section class="page__main main-page">
+                <div class="main-page__container">
+                    <div class="main-page__body body-main-block">
+                        <!-- 1 -->
+                        <div class="body-main-block__information block-main-information">
+                            <h2 class="block-main-information__tittle">Contact Us</h2>
+                            <p class="block-main-information__sub-tittle">It is a long established fact that a reader
+                                will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section2 -->
+            <section class="page__contact contact-block">
+                <div class="contact-block__container">
+                    <div class="contact-block__body body-contact-block">
+                        <form action="" class="form">
+                            <!-- 1 -->
+                            <div class="form__block-fields block-fields">
+                                <div class="block-fields__name">
+                                    <label for="first-name">first name</label>
+                                    <input type="text" name="name" id="first-name" placeholder="First Name"
+                                        class="input-field" required>
+                                </div>
+                                <div class="block-fields__name">
+                                    <label for="last-name">last name</label>
+                                    <input type="text" name="name" id="last-name" placeholder="Last Name"
+                                        class="input-field" required>
+                                </div>
+
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="form__block-fields-ditels block-fields-ditels">
+                                <!-- email -->
+                                <div class="block-fields-ditels__name">
+                                    <label for="email">email</label>
+                                    <input type="email" name="name" id="email-user" placeholder="Email"
+                                        class="input-field-ditels" required>
+                                </div>
+                                <!-- number -->
+                                <div class="block-fields-ditels__name">
+                                    <label for="number">Phone Number</label>
+                                    <input type="number" name="name" id="number"
+                                        placeholder="Phone Number ... 097-xx-xx-xxx" class="input-field-ditels" required
+                                        max="10">
+                                </div>
+                                <!-- email -->
+                                <div class="block-fields-ditels__name">
+                                    <label for="message">Message</label>
+                                    <textarea class="input-field-ditels-message" id="message" placeholder="Your Massage"
+                                        rows="5" cols="30" minlength="10" maxlength="200"></textarea>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="form__button">
+                                <input type="submit" value="Send Massage" class="form-btn block-btn">
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- section3 -->
+            <section class="page__location location-block">
+                <div class="location-block__container">
+                    <div class="location-block__body body-block-location">
+                        <!-- !======================= -->
+                        <div class="body-block-location__tittle-location tittle-block">
+                            <h2 class="tittle-block__tittle">Loaction</h2>
+                            <div class="tittle-block__line">
+                                <span></span>
+                            </div>
+                        </div>
+                        <!-- !======================== -->
+                        <div class="body-block-location__wrapper wrapper-location">
+                            <!-- 1 -->
+                            <div class="wrapper-location__information information-location-block">
+                                <h2 class="information-location-block__tittle">Visit Our Stores</h2>
+                                <p class="information-location-block__sub-tittle">Find us at these locations.</p>
+                                <h2 class="information-location-block__tittle-email">Email
+                                </h2>
+                                <p class="information-location-block__sub-tittle-email">dananz@gmail.com</p>
+                                <h2 class="information-location-block__tittle-phone">Phone</h2>
+                                <div class="information-location-block__sub-tittle-phone">+62 815 002 1000</div>
+
+                            </div>
+                            <!-- 2 -->
+                            <div class="wrapper-location__content content-location-block">
+                                <div class="content-location-block__item">
+                                    <h2 class="content-location-block__tittle">Jakarta</h2>
+                                    <p class="content-location-block__sub-tittle">Customize your interior design into
+                                        a dream place with the best designers and quality furniture. We try our best to
+                                        fulfill your expectations.</p>
+                                </div>
+
+                                <div class="content-location-block__item">
+                                    <h2 class="content-location-block__tittle">Surakarta</h2>
+                                    <p class="content-location-block__sub-tittle">Customize your interior design into
+                                        a dream place with the best designers and quality furniture. We try our best to
+                                        fulfill your expectations.</p>
+                                </div>
+
+                                <div class="content-location-block__item">
+                                    <h2 class="content-location-block__tittle">Yogyakarta</h2>
+                                    <p class="content-location-block__sub-tittle">Customize your interior design into
+                                        a dream place with the best designers and quality furniture. We try our best to
+                                        fulfill your expectations.</p>
+                                </div>
+
+                                <div class="content-location-block__item">
+                                    <h2 class="content-location-block__tittle">Bandung</h2>
+                                    <p class="content-location-block__sub-tittle">Customize your interior design into
+                                        a dream place with the best designers and quality furniture. We try our best to
+                                        fulfill your expectations.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+        <footer class="footer">
+            <!-- 1 -->
+            <div class="footer__conect">
+                <div class="footer__container">
+                    <div class="footer-block-conect">
+                        <h2 class="footer-block-conect__tittle">let's discuss making your interior like a dream place!
+                        </h2>
+                        <div class="footer-block-conect__contact footer-block-contact">
+                            <h2 class="footer-block-contact__tittle">Contact us below to work together to build your
+                                amazing interior</h2>
+                            <button class="footer-block-contact__button" onclick="contact()">contact us</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 2 -->
+            <div class="footer__container">
+                <div class="footer__info footer-block-info">
+                    <!-- 1 -->
+                    <div class="footer-block-info__company footer-block-company">
+                        <a href="" class="footer-block-company__logo"><img src="./img/logo/logo.svg" alt="logo"></a>
+                        <h2 class="footer-block-company__tittle">One of the best furniture agency.</h2>
+
+                    </div>
+                    <!-- 2 -->
+                    <div class=" footer-block-info__contact footer-block-contact-info">
+                        <p class="footer-block-contact-info__tittle"><span class="icon-Ellipse"></span> Enter your email
+                            to get the laterst news</p>
+                        <form class="footer-form-block">
+                            <input type="email" placeholder="Email Address" class="footer-form-block__input" id="email">
+                            <button class="footer-form-block__arrow"><span class="icon-string"></span></button>
+                        </form>
+                        <div class="footer-block-contact-info__social-networks">
+                            <p class="footer-form-block__tittle">Follow us On</p>
+                            <div class="block-social-networks-items">
+                                <div class="social-network"> <span class="icon-facebook"></span></div>
+                                <div class="social-network"> <span class="icon-instagram"></span></div>
+                                <div class="social-network"> <span class="icon-tiktok"></span></div>
+                                <div class="social-network"> <span class="icon-youtube"></span></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/portfolio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+// tittle block
+.main-page {
+    // .main-page__body
+
+    &__body {
+        @include adaptiv-value("padding-top", 20, 10, 1);
+        @include adaptiv-value("padding-bottom", 20, 10, 1);
+    }
+}
+.body-main-block {
+    // .body-main-block__image
+
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+.block-main-information {
+    margin: 0 auto;
+    text-align: center;
+    @include adaptiv-value("width", 582, 300, 1);
+
+    // .block-main-information__tittle
+
+    &__tittle {
+        font-weight: 700;
+        @include adaptiv-value("font-size", 56, 20, 1);
+        @include adaptiv-value("line-height", 78, 40, 1);
+    }
+
+    // .block-main-information__sub-tittle
+
+    &__sub-tittle {
+        font-weight: 400;
+        @include adaptiv-value("padding-top", 36, 10, 1);
+        @include adaptiv-value("padding-bottom", 86, 20, 1);
+        @include adaptiv-value("font-size", 18, 10, 1);
+        @include adaptiv-value("line-height", 29, 19, 1);
+    }
+}

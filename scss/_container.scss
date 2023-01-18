@@ -1,0 +1,29 @@
+[class*="__container"] {
+    width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+    [class*="__container"] {
+        width: 970px;
+    }
+}
+@media screen and (max-width: 990px) {
+    [class*="__container"] {
+        width: 750px;
+    }
+}
+@media screen and (max-width: 768px) {
+    [class*="__container"] {
+        width: 550px;
+    }
+}
+@media screen and (max-width: 575px) {
+    [class*="__container"] {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 465px) {
+    [class*="__container"] {
+        width: 310px;
+    }
+}

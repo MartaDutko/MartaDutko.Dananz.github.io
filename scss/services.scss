@@ -1,0 +1,88 @@
+// ==========================
+@import "_import";
+@import "_serviceBlock";
+// ===========================
+// font-family
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+// ==========================
+
+html,
+body {
+    min-width: 320px;
+}
+body {
+    line-height: 1;
+    font-family: Poppins;
+    background-color: white;
+    color: #333333;
+
+    .wrapper {
+        min-height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .page {
+            flex: 1 1 auto;
+            // section2
+            .achivement-block {
+                // .achivement-block__body
+
+                &__body {
+                    // padding: 25px 0px 25px 0px;
+                    @include adaptiv-value("padding-top", 25, 10, 1);
+                    @include adaptiv-value("padding-bottom", 25, 10, 1);
+                }
+            }
+
+            .information-achivemen-block {
+                display: flex;
+                flex-direction: column;
+                @include adaptiv-value("padding-top", 50, 20, 1);
+                @include adaptiv-value("gap", 40, 10, 1);
+            }
+            .content-achivemen-block {
+                display: flex;
+                justify-content: space-between;
+                // .content-achivemen-block__img
+
+                &__img {
+                    max-width: 100%;
+                }
+
+                // .content-achivemen-block__content
+
+                &__content {
+                    flex: 0 1 29%;
+                }
+            }
+            @media screen and (max-width: 1192px) {
+                .content-achivemen-block {
+                    flex-direction: column;
+                }
+
+            }
+
+            .achivemen-content-block {
+                // .achivemen-content-block__tittle
+
+                &__tittle {
+                    font-weight: 600;
+                    text-align: left;
+                    @include adaptiv-value("font-size", 24, 1, 1);
+                    @include adaptiv-value("line-height", 34, 10, 1);
+                }
+                // .achivemen-content-block__sub-tittle
+
+                &__sub-tittle {
+                    // font-size: 18px;
+                    font-weight: 400;
+                    // line-height: 29px;
+                    text-align: justify;
+                    color: #9c9c9c;
+                    @include adaptiv-value("font-size", 18, 8, 1);
+                    @include adaptiv-value("line-height", 29, 10, 1);
+                }
+            }
+        }
+    }
+}

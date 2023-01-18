@@ -1,0 +1,45 @@
+// heder-menu
+.header {
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        min-height: 185px;
+        align-items: center;
+        padding: 10px 0px;
+        .header__logo {
+            img{
+                max-width: 100%;
+            }
+        }
+        .header__menu {
+        }
+        .burger-menu {
+            #menu-toggle {
+                display: none;
+            }
+            .menubox {
+                display: flex;
+                @include adaptiv-value("gap",40,20,1);
+                flex-wrap: wrap;
+                row-gap: 3px;
+
+                .menu-item {
+                    position: relative;
+                    color: #333333;
+                    text-decoration: none;
+                }
+
+                .menu-item:hover {
+                    color: #000;
+                    font-weight: 600;
+                }
+                .header__buttom{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.active {
+    overflow: hidden;
+}

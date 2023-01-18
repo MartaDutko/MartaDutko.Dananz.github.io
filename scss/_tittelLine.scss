@@ -1,0 +1,29 @@
+.tittle-block {
+    display: flex;
+    gap: 10px;
+    // .tittle-block__tittle
+
+    &__tittle {
+        font-size: Poppins;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        text-transform: uppercase;
+        @include adaptiv-value("font-size",16,11,1);
+    }
+
+    // .tittle-block__line
+
+    &__line {
+        flex: 0 1 44%;
+        height: 20px;
+        position: relative;
+        span {
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            background-color:#333333;
+        }
+    }
+}

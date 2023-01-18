@@ -1,0 +1,247 @@
+// ==========================
+@import "_import";
+@import "_serviceBlock";
+@import "_body";
+// font-family
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+// ==========================
+
+label {
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    @include adaptiv-value("font-size", 18, 14, 1);
+    @include adaptiv-value("line-height", 27, 15, 1);
+    @include adaptiv-value("padding-bottom", 10, 5, 1);
+}
+input::placeholder {
+    font-weight: 400;
+    text-align: left;
+    color: #9c9c9c;
+    @include adaptiv-value("font-size", 16, 10, 1);
+    @include adaptiv-value("line-height", 26, 15, 1);
+}
+textarea {
+    resize: none;
+}
+textarea::placeholder {
+    font-family: Poppins;
+    font-weight: 400;
+    text-align: left;
+    color: #9c9c9c;
+    @include adaptiv-value("font-size", 16, 10, 1);
+    @include adaptiv-value("line-height", 26, 15, 1);
+}
+textarea:invalid {
+    border: 0.5px dashed red;
+}
+// section2
+.contact-block {
+    // .contact-block__body
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        @include adaptiv-value("padding-bottom", 55, 20, 1);
+    }
+}
+
+.form {
+    // .form__block-fields
+
+    &__block-fields {
+        display: flex;
+        gap: 14px;
+    }
+
+    // .form__button
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        @include adaptiv-value("padding-top", 40, 10, 1);
+    }
+}
+.block-fields {
+    // .block-fields__name
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.input-field {
+    @include adaptiv-value("width", 400, 130, 1);
+    @include adaptiv-value("padding-top", 18, 5, 1);
+    @include adaptiv-value("padding-bottom", 18, 5, 1);
+    @include adaptiv-value("padding-left", 32, 5, 1);
+}
+
+.form {
+    // .form__block-fields-ditels
+
+    &__block-fields-ditels {
+        display: flex;
+        flex-direction: column;
+        @include adaptiv-value("gap", 19, 10, 1);
+        @include adaptiv-value("padding-top", 19, 10, 1);
+    }
+}
+.block-fields-ditels {
+    // .block-fields-ditels__name
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.input-field-ditels {
+    @include adaptiv-value("padding-top", 18, 5, 1);
+    @include adaptiv-value("padding-bottom", 18, 5, 1);
+    @include adaptiv-value("padding-left", 32, 5, 1);
+}
+.input-field-ditels-message {
+    @include adaptiv-value("height", 178, 50, 1);
+    @include adaptiv-value("padding-top", 18, 5, 1);
+    @include adaptiv-value("padding-bottom", 18, 5, 1);
+    @include adaptiv-value("padding-left", 32, 5, 1);
+}
+// section3
+
+.location-block {
+    // .location-block__body
+
+    &__body {
+        @include adaptiv-value("padding-top", 55, 20, 1);
+        @include adaptiv-value("padding-button", 80, 20, 1);
+    }
+}
+.body-block-location {
+    // .body-block-location__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @include adaptiv-value("padding-top", 20, 10, 1);
+    }
+}
+.wrapper-location {
+    // .wrapper-location__information
+
+    &__information {
+        flex: 0 1 35%;
+        display: flex;
+        flex-direction: column;
+        @include adaptiv-value("gap", 25, 10, 1);
+    }
+
+    // .wrapper-location__content
+
+    &__content {
+        flex: 1 0 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.information-location-block {
+    // .information-location-block__tittle
+
+    &__tittle {
+        font-weight: 600;
+        text-align: left;
+        @include adaptiv-value("font-size", 36, 20, 1);
+        @include adaptiv-value("line-height", 61, 30, 1);
+    }
+
+    // .information-location-block__sub-tittle
+
+    &__sub-tittle {
+        font-weight: 400;
+        text-align: left;
+        color: #9c9c9c;
+        @include adaptiv-value("font-size", 18, 10, 1);
+        @include adaptiv-value("line-height", 29, 20, 1);
+    }
+
+    // .information-location-block__tittle-email
+
+    &__tittle-email {
+        font-weight: 600;
+        text-align: left;
+        @include adaptiv-value("font-size", 24, 14, 1);
+        @include adaptiv-value("line-height", 34, 20, 1);
+    }
+
+    // .information-location-block__sub-tittle-email
+
+    &__sub-tittle-email {
+        font-weight: 400;
+        text-align: left;
+        color: #9c9c9c;
+        @include adaptiv-value("font-size", 18, 10, 1);
+        @include adaptiv-value("line-height", 29, 20, 1);
+    }
+
+    // .information-location-block__tittle-phone
+
+    &__tittle-phone {
+        font-weight: 600;
+        text-align: left;
+        @include adaptiv-value("font-size", 24, 14, 1);
+        @include adaptiv-value("line-height", 34, 20, 1);
+    }
+
+    // .information-location-block__sub-tittle-phone
+
+    &__sub-tittle-phone {
+        font-weight: 400;
+        text-align: left;
+        color: #9c9c9c;
+        @include adaptiv-value("font-size", 18, 10, 1);
+        @include adaptiv-value("line-height", 29, 20, 1);
+    }
+}
+.content-location-block {
+    // .content-location-block__item
+
+    &__item {
+        flex: 0 1 45%;
+    }
+
+    // .content-location-block__tittle
+
+    &__tittle {
+        font-weight: 600;
+        text-align: left;
+        @include adaptiv-value("font-size", 24, 14, 1);
+        @include adaptiv-value("line-height", 34, 24, 1);
+    }
+
+    // .content-location-block__sub-tittle
+
+    &__sub-tittle {
+        font-weight: 400;
+        text-align: justify;
+        color: #9c9c9c;
+        @include adaptiv-value("padding-top", 30, 10, 1);
+        @include adaptiv-value("padding-bottom", 30, 10, 1);
+        @include adaptiv-value("font-size", 18, 10, 1);
+        @include adaptiv-value("line-height", 29, 20, 1);
+    }
+}
+@media screen and (max-width: 670px) {
+    .content-location-block {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    @media screen and (max-width: 477px) {
+        .body-block-location__wrapper {
+            flex-direction: column-reverse;
+            .wrapper-location__information {
+                align-items: center;
+            }
+        }
+    }
+}

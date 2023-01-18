@@ -1,0 +1,107 @@
+// ==========================
+@import "_import";
+@import "_serviceBlock";
+// ===========================
+// font-family
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+// ==========================
+html,
+body {
+    min-width: 320px;
+}
+body {
+    line-height: 1;
+    font-family: Poppins;
+    background-color: white;
+    color: #333333;
+
+    .wrapper {
+        min-height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .page {
+            flex: 1 1 auto;
+
+            .designer-block {
+                // .designer-block__body
+
+                &__body {
+                    @include adaptiv-value("padding-top",50,20,1); 
+                    @include adaptiv-value("padding-bottom",50,20,1); 
+                }
+            }
+
+            .content-designer-block {
+                // .content-designer-block__tittle
+
+                &__tittle {
+                    font-weight: 600;
+                    text-align: left;
+                    @include adaptiv-value("font-size",36,20,1); 
+                    @include adaptiv-value("line-height",61,20,1); 
+                    @include adaptiv-value("padding-top",20,10,1); 
+                    @include adaptiv-value("padding-bottom",24,10,1); 
+                }
+
+                // .content-designer-block__sub-tittle
+
+                &__sub-tittle {
+                    max-width: 471px;
+                    font-weight: 400;
+                    text-align: left;
+                    color: #9c9c9c;
+                    @include adaptiv-value("font-size",18,10,1); 
+                    @include adaptiv-value("line-height",29,15,1); 
+                }
+            }
+            .image-designer-block {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                @include adaptiv-value("padding-top",90,20,1); 
+                @include adaptiv-value("gap",20,10,1); 
+            }
+            .item-designer {
+                position: relative;
+                background-color: #2c3878;
+                // .item-designer__img
+
+                &__img {
+                    max-width: 100%;
+                }
+
+                // .item-designer__content
+
+                &__content {
+                    padding: 18px;
+                    margin: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 7%;
+                    background-color: white;
+                }
+            }
+            .block-item-content {
+                // .block-item-content__tittle
+
+                &__tittle {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    text-align: left;
+                }
+
+                // .block-item-content__sub-tittle
+
+                &__sub-tittle {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    text-align: left;
+                    color: #9c9c9c;
+                }
+            }
+        }
+    }
+}

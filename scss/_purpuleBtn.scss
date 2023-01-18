@@ -1,0 +1,15 @@
+    // !purpulle btn
+    .block-btn {
+        color: white;
+        background-color: #2C3878;
+        transition-duration: 500ms;
+        @include adaptiv-value("font-size",14,9,1);
+        @include adaptiv-value("line-height",21,0,1);
+        @include adaptiv-value("padding",14,10,1);
+        padding: 13px 40px;
+    }
+    .block-btn:hover {
+        background-color: #2c3878b3;
+        cursor: pointer;
+        transition-duration: 500ms;
+    }

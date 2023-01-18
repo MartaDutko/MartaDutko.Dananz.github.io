@@ -1,0 +1,87 @@
+.service-block {
+    // .service-block__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        @include adaptiv-value("gap", 40, 10, 1);
+        @include adaptiv-value("padding-top", 20, 10, 1);
+        @include adaptiv-value("padding-bottom", 20, 10, 1);
+    }
+}
+
+.inform-block-service {
+    // .inform-block-service__tittle
+
+    &__tittle {
+        font-weight: 600;
+        text-align: left;
+        @include adaptiv-value("font-size", 36, 20, 1);
+        @include adaptiv-value("line-height", 61, 20, 1);
+        @include adaptiv-value("padding-top", 32, 10, 1);
+        @include adaptiv-value("padding-bottom", 25, 10, 1);
+    }
+
+    // .inform-block-service__sub-tittle
+
+    &__sub-tittle {
+        max-width: 471px;
+        font-weight: 400;
+        text-align: left;
+        color: #9c9c9c;
+        @include adaptiv-value("font-size", 18, 10, 1);
+        @include adaptiv-value("line-height", 29, 15, 1);
+    }
+}
+
+.comtent-block-service {
+    display: flex;
+    justify-content: space-between;
+    // .comtent-block-service__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.item-servise-block {
+    flex: 0 1 32%;
+    border: 1px solid #9c9c9c;
+    border-radius: 10px;
+    padding: 27px;
+    // .item-servise-block__image
+
+    &__image {
+        width: 63px;
+        height: 63px;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+    }
+
+    // .item-servise-block__tittle
+
+    &__tittle {
+        font-weight: 600;
+        text-align: center;
+        @include adaptiv-value("font-size", 24, 10, 1);
+        @include adaptiv-value("line-height", 34, 5, 1);
+    }
+
+    // .item-servise-block__sub-tittle
+
+    &__sub-tittle {
+        font-weight: 400;
+        text-align: center;
+        color: #9c9c9c;
+        @include adaptiv-value("font-size", 18, 10, 1);
+        @include adaptiv-value("line-height", 29, 10, 1);
+    }
+}
+@media screen and (max-width: 670px) {
+    .comtent-block-service{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
